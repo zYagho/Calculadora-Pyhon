@@ -6,6 +6,7 @@ from variables import WINDOW_ICON_PATH
 from display import Display
 from info import Info
 from styles import setupTheme
+from buttons import ButtonsGrid
 
 if __name__ == '__main__':
 
@@ -24,6 +25,10 @@ if __name__ == '__main__':
     display = Display()
     window.addToVlayout(display)
 
+    window.v_layout.addLayout(ButtonsGrid)
+
+
+    window.adjustWindowSize()
     window.show()
     sys.exit(app.exec())
 
