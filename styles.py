@@ -2,12 +2,20 @@ import qdarktheme
 
 
 from variables import (DARKER_PRIMARY_COLOR, DARKEST_PRIMARY_COLOR,
-                       PRIMARY_COLOR)
+                       PRIMARY_COLOR, BUTTON_COLOR_MEDIUM, BUTTON_COLOR_HIGH, BUTTON_COLOR_LOW)
 
 qss = f"""
     QPushButton[cssClass="Button"] {{
         color: #fff;
-        background: gray;
+        background: {BUTTON_COLOR_HIGH};
+    }}
+    QPushButton[cssClass="Button"]:hover {{
+        color: #fff;
+        background: {BUTTON_COLOR_MEDIUM};
+    }}
+    QPushButton[cssClass="Button"]:pressed {{
+        color: #fff;
+        background: {BUTTON_COLOR_LOW};
     }}
     QPushButton[cssClass="specialButton"] {{
         color: #fff;

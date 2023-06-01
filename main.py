@@ -25,7 +25,7 @@ if __name__ == '__main__':
     display = Display()
     window.addToVlayout(display)
 
-    buttonsGrid = ButtonsGrid()
+    buttonsGrid = ButtonsGrid(display)
     window.v_layout.addLayout(buttonsGrid)
 
 
