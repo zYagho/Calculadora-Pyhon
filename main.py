@@ -25,7 +25,8 @@ if __name__ == '__main__':
     display = Display()
     window.addToVlayout(display)
 
-    window.v_layout.addLayout(ButtonsGrid)
+    buttonsGrid = ButtonsGrid()
+    window.v_layout.addLayout(buttonsGrid)
 
 
     window.adjustWindowSize()
