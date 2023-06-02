@@ -18,15 +18,15 @@ qss = f"""
         background: {BUTTON_COLOR_LOW};
     }}
     QPushButton[cssClass="specialButton"] {{
-        color: #fff;
+        color: black;
         background: {PRIMARY_COLOR};
     }}
     QPushButton[cssClass="specialButton"]:hover {{
-        color: #fff;
+        color: black;
         background: {DARKER_PRIMARY_COLOR};
     }}
     QPushButton[cssClass="specialButton"]:pressed {{
-        color: #fff;
+        color: black;
         background: {DARKEST_PRIMARY_COLOR};
     }}
 """

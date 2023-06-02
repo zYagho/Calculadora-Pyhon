@@ -18,16 +18,16 @@ if __name__ == '__main__':
     app.setWindowIcon(icon)
 
     #Info
-    info = Info('22+10')
+    info = Info('')
     window.addToVlayout(info)
 
     #Display
     display = Display()
     window.addToVlayout(display)
 
-    buttonsGrid = ButtonsGrid(display)
+    #Grid
+    buttonsGrid = ButtonsGrid(display, info, window)
     window.v_layout.addLayout(buttonsGrid)
-
 
     window.adjustWindowSize()
     window.show()

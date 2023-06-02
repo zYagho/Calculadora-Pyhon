@@ -1,5 +1,5 @@
 
-from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout
+from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QMessageBox
 
 class Window(QMainWindow):
     def __init__(self):
@@ -21,3 +21,6 @@ class Window(QMainWindow):
     def adjustWindowSize(self):
         self.adjustSize()
         self.setFixedSize(self.width(), self.height())
+
+    def messagebox(self):
+        return QMessageBox(self)

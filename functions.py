@@ -14,3 +14,17 @@ def isValid(string:str):
         return True
     except ValueError:
         return False
+
+
+def ula(operation, leftNumber, rigthNumber):
+
+    if operation == '+':
+        return float(leftNumber + rigthNumber)
+    elif operation == '-':
+        return float(leftNumber - rigthNumber)
+    elif operation == '*':
+        return float(leftNumber * rigthNumber)
+    elif operation == '/':
+        return float(leftNumber / rigthNumber)
+    elif operation == '^':
+        return float(leftNumber ** rigthNumber)
