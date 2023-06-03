@@ -1,5 +1,5 @@
 import re
-
+from math import pow
 
 NUM_OR_DOT_REGEX =  re.compile(r'^[0-9.]$')
 
@@ -27,4 +27,4 @@ def ula(operation, leftNumber, rigthNumber):
     elif operation == '/':
         return float(leftNumber / rigthNumber)
     elif operation == '^':
-        return float(leftNumber ** rigthNumber)
+        return float(pow(leftNumber, rigthNumber))
